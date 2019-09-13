@@ -23,6 +23,14 @@ const Home = () => {
         size: "lg"
     }
 
+    const handleSubmit = () => {
+        console.log("handle submit")
+    }
+
+    const handleClear = () => {
+        console.log("handle clear")
+    }
+
     return (
         <Container fluid={true}>
             <Header />
@@ -38,10 +46,10 @@ const Home = () => {
                 <Col md={4} xs={12} className="col3 text-center pb-3 pt-3">
                     <Row>
                         <Col md={4} xs={12}>
-                            <ButtonCustom btn_config={submitButtonSettings} />
+                            <ButtonCustom btn_config={submitButtonSettings} onClick={handleSubmit} />
                         </Col>
                         <Col md={4} xs={12}>
-                            <ButtonCustom btn_config={clearButtonSettings} />
+                            <ButtonCustom btn_config={clearButtonSettings} onClick={handleClear} />
                         </Col>
                     </Row>
                 </Col>
