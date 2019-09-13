@@ -36,10 +36,10 @@ const Home = () => {
                 <Col md={4} xs={12} className="col3 text-center pb-3 pt-3">
                     <Row>
                         <Col md={4} xs={12}>
-                            <ButtonCustom  />
+                            <ButtonCustom btn_config={submitButtonSettings} />
                         </Col>
                         <Col md={4} xs={12}>
-                            <ButtonCustom  />
+                            <ButtonCustom btn_config={clearButtonSettings} />
                         </Col>
                     </Row>
                 </Col>
