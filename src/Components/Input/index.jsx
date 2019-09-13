@@ -1,10 +1,16 @@
 import React from 'react';
 import "./styles.css";
 
-const Input = ({ label, type, name, id, status, handleOnChange }) => {
+const Input = ({ label, type, name }) => {
     return (
-            <input label={label} type={type} name={name} id={id} status={status} onChange={handleOnChange}/>
+        <div className="inputcomponent">
+            <label className="label">{label}</label>
+            <input type={type} name={name}  />
+        </div>
     )
 }
 
 export default Input;
+
+/*id, status, handleOnChange 
+id={id} status={status} onChange={handleOnChange}*/

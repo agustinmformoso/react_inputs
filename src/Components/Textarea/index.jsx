@@ -1,9 +1,12 @@
 import React from 'react';
 import "./styles.css";
 
-const Textarea = ({  }) => {
+const Textarea = ({ name, rows, cols, label }) => {
     return (
-            <textarea></textarea>
+        <div>
+            <label className="label">{label}</label>
+            <textarea name={name} rows={rows} cols={cols} />
+        </div>
     )
 }
 
