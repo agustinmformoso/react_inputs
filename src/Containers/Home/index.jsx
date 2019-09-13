@@ -5,20 +5,43 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../../Components/Header';
+import Textarea from '../../Components/Textarea';
+import Input from '../../Components/Input';
+import ButtonCustom from '../../Components/ButtonCustom';
 
 const Home = () => {
+
+    const submitButtonSettings = {
+        description: "Submit",
+        variant: "success",
+        size: "lg"
+    }
+
+    const clearButtonSettings = {
+        description: "Clear",
+        variant: "danger",
+        size: "lg"
+    }
+
     return (
-        <Container>
+        <Container fluid={true}>
             <Header />
             <Row>
-                <Col md={4} xs={12} className="col1">
+                <Col md={4} xs={12} className="col1 text-center pb-3 pt-3">
                     <div>hola</div>
                 </Col>
-                <Col md={4} xs={12} className="col2">
+                <Col md={4} xs={12} className="col2 text-center pb-3 pt-3">
                     <div>hola</div>
                 </Col>
-                <Col md={4} xs={12} className="col3">
-                    <div>hola</div>
+                <Col md={4} xs={12} className="col3 text-center pb-3 pt-3">
+                    <Row>
+                        <Col md={4} xs={12}>
+                            <ButtonCustom  />
+                        </Col>
+                        <Col md={4} xs={12}>
+                            <ButtonCustom  />
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>
