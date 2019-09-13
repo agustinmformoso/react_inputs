@@ -28,7 +28,9 @@ const Home = () => {
             <Header />
             <Row>
                 <Col md={4} xs={12} className="col1 text-center pb-3 pt-3">
-                    <div>hola</div>
+                    {/* <Input label="Nombre y apellido" type="text" name="nombreyapellido"/>
+                    <Input label="Teléfono" type="number" name="number"/>
+                    <Input label="Mail" type="mail" name="mail"/> */}
                 </Col>
                 <Col md={4} xs={12} className="col2 text-center pb-3 pt-3">
                     <div>hola</div>
