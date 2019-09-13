@@ -27,26 +27,26 @@ const Home = () => {
         <Container fluid={true}>
             <Header />
             <Row>
-                <Col md={4} xs={12} className="col1 text-center pb-3 pt-3">
-                    {/* <Input label="Nombre y apellido" type="text" name="nombreyapellido"/>
-                    <Input label="Teléfono" type="number" name="number"/>
-                    <Input label="Mail" type="mail" name="mail"/> */}
+                <Col md={4} xs={12} className="col1 pb-3 pt-3">
+                    <Input label="Nombre y apellido" type="text" name="nombreyapellido" />
+                    <Input label="Teléfono" type="number" name="number" />
+                    <Input label="Mail" type="mail" name="mail" />
+                    <Input label="Femenino" type="radio" name="femenino" />
+                    <Input label="Masculino" type="radio" name="masculino" />
                 </Col>
                 <Col md={4} xs={12} className="col2 text-center pb-3 pt-3">
-                    <div>hola</div>
+                    <Input label="Opcion 1" type="checkbox" name="opciones" />
+                    <Input label="Opcion 2" type="checkbox" name="opciones" />
+                    <Textarea label="Comentario" name="comentario" />
                 </Col>
                 <Col md={4} xs={12} className="col3 text-center pb-3 pt-3">
-                    <Row>
-                        <Col md={4} xs={12}>
-                            <ButtonCustom btn_config={submitButtonSettings} />
-                        </Col>
-                        <Col md={4} xs={12}>
-                            <ButtonCustom btn_config={clearButtonSettings} />
-                        </Col>
-                    </Row>
+                    <Input label="Dirección" type="text" name="direccion" />
+                    <Input label="Código postal" type="number" name="codigopostal" />
+                    <ButtonCustom btn_config={submitButtonSettings} />
+                    <ButtonCustom btn_config={clearButtonSettings} />
                 </Col>
             </Row>
-        </Container>
+        </Container >
     )
 }
 
